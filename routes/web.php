@@ -49,8 +49,36 @@ Route::middleware(['auth'])->group(function () {
             return view('demo');
         });
 
-         /*Dashboard*/
-         Route::get('/home', 'HomeController@index')->name('home');
-         Route::redirect('/', '/home');
+        /*Dashboard*/
+        Route::get('/home', 'HomeController@index')->name('home');
+        Route::redirect('/', '/home');
+
+
+
+        /*ISP Routes*/
+        Route::get('/isps', 'Isp\IspController@index')->name('isp.index');
+        Route::get('/isp', 'Isp\IspController@create')->name('isp.create');
+        Route::post('/isp', 'Isp\IspController@store')->name('isp.store');
+        Route::get('/isp/{isp}/edit', 'Isp\IspController@edit')->name('isp.edit');
+        Route::patch('/isp/{isp}', 'Isp\IspController@update')->name('isp.update');
+        Route::delete('/isp/{isp}', 'Isp\IspController@destroy')->name('isp.destroy');
+
+
+        /*ISP Routes*/
+        Route::get('/packages', 'Isp\PackageController@index')->name('package.index');
+        Route::get('/package', 'Isp\PackageController@create')->name('package.create');
+        Route::post('/package', 'Isp\PackageController@store')->name('package.store');
+        Route::get('/package/{package}/edit', 'Isp\PackageController@edit')->name('package.edit');
+        Route::patch('/package/{package}', 'Isp\PackageController@update')->name('package.update');
+        Route::delete('/package/{package}', 'Isp\PackageController@destroy')->name('package.destroy');
+
+
+        /*ISP Routes*/
+        Route::get('/isp/users', 'Isp\IspUserController@index')->name('isp.user.index');
+        Route::get('/isp/user', 'Isp\IspUserController@create')->name('isp.user.create');
+        Route::post('/isp/user', 'Isp\IspUserController@store')->name('isp.user.store');
+        Route::get('/isp/user/{ispUser}/edit', 'Isp\IspUserController@edit')->name('isp.user.edit');
+        Route::patch('/isp/user/{ispUser}', 'Isp\IspUserController@update')->name('isp.user.update');
+        Route::delete('/isp/user/{ispUser}', 'Isp\IspUserController@destroy')->name('isp.user.destroy');
     });
 });

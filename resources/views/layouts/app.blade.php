@@ -233,8 +233,8 @@
                                         <span class="hide-menu">Manage ISP</span></a>
                                     <!--Second Level Menu-->
                                     <ul aria-expanded="false" class="collapse second-level">
-                                        <li class="sidebar-item"><a href="{{ route('user.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> ISP List</span></a></li>
-                                        <li class="sidebar-item"><a href="{{ route('user.create') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New ISP</span></a></li>
+                                        <li class="sidebar-item"><a href="{{ route('isp.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> ISP List</span></a></li>
+                                        <li class="sidebar-item"><a href="{{ route('isp.create') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New ISP</span></a></li>
                                     </ul>
 
                                     <!--Second Level Menu End-->
@@ -248,10 +248,10 @@
                                         <span class="hide-menu">Manage Package</span></a>
                                     <!--Second Level Menu-->
                                     <ul aria-expanded="false" class="collapse second-level">
-                                        <li class="sidebar-item"><a href="{{ route('company.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu">Package List</span></a>
+                                        <li class="sidebar-item"><a href="{{ route('package.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu">Package List</span></a>
                                         </li>
 
-                                        <li class="sidebar-item"><a href="{{ route('branch.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New Package</span></a>
+                                        <li class="sidebar-item"><a href="{{ route('package.create') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New Package</span></a>
                                         </li>
                                     </ul>
 
@@ -264,10 +264,10 @@
                                         <span class="hide-menu">Manage ISP User</span></a>
                                     <!--Second Level Menu-->
                                     <ul aria-expanded="false" class="collapse second-level">
-                                        <li class="sidebar-item"><a href="{{ route('company.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu">ISP User List</span></a>
+                                        <li class="sidebar-item"><a href="{{ route('isp.user.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu">ISP User List</span></a>
                                         </li>
 
-                                        <li class="sidebar-item"><a href="{{ route('branch.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New ISP User</span></a>
+                                        <li class="sidebar-item"><a href="{{ route('isp.user.create') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New ISP User</span></a>
                                         </li>
                                     </ul>
 
