@@ -5,6 +5,7 @@
 // $carbon_date = Carbon\Carbon::parse($date);
 // echo $carbon_date;
 ?>
+
 <head>
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -170,8 +171,8 @@
                             </a>
                         </li>
 
-    
-    
+
+
                         <!-- Back Office Main Menu-->
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark" href="#" aria-expanded="false">
@@ -180,7 +181,7 @@
                             </a>
                             <!--First Level Menu-->
                             <ul aria-expanded="false" class="collapse first-level">
-                                
+
 
                                 <li class="sidebar-item">
                                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
@@ -188,7 +189,7 @@
                                         <span class="hide-menu">Manage User</span></a>
                                     <!--Second Level Menu-->
                                     <ul aria-expanded="false" class="collapse second-level">
-                                                                               <li class="sidebar-item"><a href="{{ route('user.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> User List</span></a></li>
+                                        <li class="sidebar-item"><a href="{{ route('user.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> User List</span></a></li>
                                         <li class="sidebar-item"><a href="{{ route('user.create') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New User</span></a></li>
                                     </ul>
 
@@ -224,7 +225,7 @@
                             </a>
                             <!--First Level Menu-->
                             <ul aria-expanded="false" class="collapse first-level">
-                                
+
 
                                 <li class="sidebar-item">
                                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
@@ -232,7 +233,7 @@
                                         <span class="hide-menu">Manage ISP</span></a>
                                     <!--Second Level Menu-->
                                     <ul aria-expanded="false" class="collapse second-level">
-                                                                               <li class="sidebar-item"><a href="{{ route('user.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> ISP List</span></a></li>
+                                        <li class="sidebar-item"><a href="{{ route('user.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> ISP List</span></a></li>
                                         <li class="sidebar-item"><a href="{{ route('user.create') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New ISP</span></a></li>
                                     </ul>
 
@@ -244,13 +245,29 @@
                                 <li class="sidebar-item">
                                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                                         <i class="mdi mdi-collage"></i>
-                                        <span class="hide-menu">Setting</span></a>
+                                        <span class="hide-menu">Manage Package</span></a>
                                     <!--Second Level Menu-->
                                     <ul aria-expanded="false" class="collapse second-level">
-                                        <li class="sidebar-item"><a href="{{ route('company.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> Company Information</span></a>
+                                        <li class="sidebar-item"><a href="{{ route('company.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu">Package List</span></a>
                                         </li>
 
-                                        <li class="sidebar-item"><a href="{{ route('branch.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> Branch Information</span></a>
+                                        <li class="sidebar-item"><a href="{{ route('branch.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New Package</span></a>
+                                        </li>
+                                    </ul>
+
+                                    <!--Second Level Menu End-->
+                                </li>
+
+                                <li class="sidebar-item">
+                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                        <i class="mdi mdi-collage"></i>
+                                        <span class="hide-menu">Manage ISP User</span></a>
+                                    <!--Second Level Menu-->
+                                    <ul aria-expanded="false" class="collapse second-level">
+                                        <li class="sidebar-item"><a href="{{ route('company.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu">ISP User List</span></a>
+                                        </li>
+
+                                        <li class="sidebar-item"><a href="{{ route('branch.index') }}" class="sidebar-link"><i class="mdi mdi-priority-low"></i><span class="hide-menu"> New ISP User</span></a>
                                         </li>
                                     </ul>
 
@@ -264,33 +281,33 @@
                         <!--Back Office Main Menu End-->
 
 
-                        
-                
 
-                    <!--Login User Profile Start-->
-                    <li class="nav-item dropdown tests">
-                        <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="{{ URL::asset('assets/images/users/profile.png') }}" alt="user" class="rounded-circle" width="33">
-                            <span class="m-l-5 font-medium d-none d-sm-inline-block">{{ Auth::user()->name }} <i class="mdi mdi-chevron-down"></i></span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY test">
-                            <span class="with-arrow">
-                                <span class="bg-primary"></span>
-                            </span>
-                            @foreach(\App\Models\Administration\Settings\Branch::all() as $branch)
-                            <a class="dropdown-item {{ ($branch->id == session()->get('branch_id') ? 'text-success':'') }}" href="{{route('switcher',$branch->id)}}">
-                                <i class="fa fa-home m-r-5 m-l-5"></i> {{ $branch->name }}</a>
-                            @endforeach
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </div>
-                    </li>
-                    <!--Login User Profile End-->
+
+                        <!--Login User Profile Start-->
+                        <li class="nav-item dropdown tests">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="{{ URL::asset('assets/images/users/profile.png') }}" alt="user" class="rounded-circle" width="33">
+                                <span class="m-l-5 font-medium d-none d-sm-inline-block">{{ Auth::user()->name }} <i class="mdi mdi-chevron-down"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY test">
+                                <span class="with-arrow">
+                                    <span class="bg-primary"></span>
+                                </span>
+                                @foreach(\App\Models\Administration\Settings\Branch::all() as $branch)
+                                <a class="dropdown-item {{ ($branch->id == session()->get('branch_id') ? 'text-success':'') }}" href="{{route('switcher',$branch->id)}}">
+                                    <i class="fa fa-home m-r-5 m-l-5"></i> {{ $branch->name }}</a>
+                                @endforeach
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        <!--Login User Profile End-->
 
                     </ul>
                     <!--Main Menu Header End-->
@@ -314,9 +331,9 @@
                 <!-- ============================================================== -->
                 <!-- Submenu Header Start -->
                 <!-- ============================================================== -->
-                
-                
-                
+
+
+
                 <!-- ============================================================== -->
                 <!-- Submenu Header End -->
                 <!-- ============================================================== -->
