@@ -33,8 +33,8 @@ class CreateCompaniesTable extends Migration
         /*Insert By Default Master Company While Migrate*/
         DB::table('companies')->insert([
             'code'=>'119051211',
-            'name'=>'Ruposhi Bangla Electronics',
-            'address'=>'Bogra, Rajshahi, Bangladesh',
+            'name'=>'ISP',
+            'address'=>'Dhaka, Bangladesh',
             'status'=>'a',
             'logo'=>'logo.png',
             'created_at'=>'2019-05-11 00:00:00',
