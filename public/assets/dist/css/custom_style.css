@@ -1,0 +1,356 @@
+.error {
+    color: red !important;
+}
+
+.submenu_style ul {
+    margin: 0;
+    padding: 0;
+    margin: 2px 0;
+}
+
+.submenu_style ul li {
+    display: inline-block !important;
+}
+
+.submenu_style ul li a {
+    padding: 5px 10px;
+    border-radius: 60px;
+    background: #233242;
+    display: block;
+    color: #949ba3;
+    transition: all .4s;
+    font-size: 12px;
+}
+
+.submenu_style ul li a.parent {
+    background: #3cb0ff !important;
+    color: #fff;
+}
+
+.submenu_style ul li a:hover {
+    background: #233242;
+    color: #fff;
+}
+
+.page-breadcrumb.submenu_style {
+    padding: 0 20px 0;
+}
+
+.page-content-header {
+    margin: 4px 20px 0px;
+    width: 100%;
+}
+
+.page-content-header .card, .page-content-body .card {
+    margin-bottom: 0;
+}
+
+.submenu_style .card {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.submenu_style .card-body {
+    /*padding: 4px 20px;*/
+    padding: 0;
+}
+
+
+@media (max-width: 767px) {
+    .page-breadcrumb.submenu_style {
+        display: none;
+    }
+}
+
+
+.saleform .table thead th {
+    border: 0 !important;
+}
+
+.saleform .table td, .saleform .table th {
+    border: .5px solid #ccc;
+}
+
+.page-wrapper {
+    background: #fff !important;
+}
+
+.page-wrapper > .container-fluid {
+    padding: 0 20px !important;
+}
+
+.card {
+    margin-top: 4px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .1) !important;
+}
+
+.card-header {
+    padding: 2px 10px;
+    background: linear-gradient(to bottom, #FFF 0, #EEE 100%);
+    border-bottom: 1px solid #DDD;
+}
+
+.card-header h4 {
+    font-size: 1.15rem !important;
+}
+
+.card-header h4 .btn {
+    padding: 2px 5px !important;
+}
+
+.card-body {
+    padding: 10px 20px;
+    border-top: 0;
+}
+
+.table td, .table th {
+    vertical-align: middle !important;;
+}
+
+table.table tbody input, table.table tbody textarea, table tfoot textarea {
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+.saleform tbody td {
+    padding: .1rem .3rem;
+}
+
+.saleform tbody tr th {
+    background: #f7f7f7;
+}
+
+.saleform tbody .form-control, .saleform tbody select {
+    height: calc(.75em + .75rem + 2px);
+    padding: 0;
+    border: 0;
+}
+
+.saleform thead .form-control, .form-control:disabled, .form-control[readonly], .form-control, .col-form-label {
+    height: calc(.75em + .75rem + 2px);
+}
+
+.col-form-label {
+    padding-top: 0 !important;
+}
+
+.form-group {
+    margin-bottom: .2rem !important;
+}
+
+
+.form-control:disabled, .form-control[readonly] {
+    border-color: rgba(0, 0, 0, .25);
+}
+
+.formmtop #default_order_wrapper {
+    margin-top: 20px;
+}
+
+.saleform tbody .select2-container--default .select2-selection--single {
+    border: 0 !important;
+}
+
+.saleform .btn.btn-primary, .saleform .btn.btn-sm {
+    font-size: .45rem;
+    display: block;
+}
+
+.select2.select2-container {
+    width: 100% !important;
+}
+
+/*.calculation-total{
+    text-align: right;
+}*/
+.calculation, .calculation input {
+    text-align: right;
+    font-weight: 500;
+}
+
+.select2-container .select2-selection--single {
+    border-color: #e9ecef !important;
+    border-radius: 2px !important;
+    height: 24.5px !important;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: .875rem !important;
+}
+
+.select2-selection__rendered {
+    height: 100% !important;
+    line-height: 26px !important;
+    font-size: .875rem !important;
+    font-weight: 400 !important;
+}
+
+button.btn {
+    border-radius: 0;
+}
+
+/*button.btn:focus {*/
+/*    box-shadow: unset !important;*/
+/*    !*box-shadow: 0 0 0 0.2rem rgb(255, 0, 0) !important;*!*/
+/*}*/
+
+tr.saleBtn td {
+    padding: 0rem .3rem;
+}
+
+tr.saleBtn td a, tr.saleBtn td button {
+    display: block;
+    padding: 0rem !important;
+    margin: 0 auto;
+}
+
+.saleform textarea {
+    resize: none;
+}
+
+
+/*Data Table CSS*/
+
+.table td, .table th {
+    padding: .1rem;
+}
+
+
+.dataTables_length label, .dataTables_filter label {
+    display: inline-flex;
+}
+
+.dataTables_filter label {
+    float: right;
+}
+
+.dataTables_length select {
+    margin: 0 5px;
+}
+
+.dataTables_filter input {
+    margin-left: 5px;
+}
+
+.dataTables_paginate {
+    float: right;
+    padding-top: 2px;
+}
+
+.dataTables_info {
+    padding-top: 2px;
+}
+
+
+/*Due Highlight*/
+.highlight, .highlight::placeholder {
+    background-color: #ff4747 !important;
+    color: #0b0b0b;
+    font-weight: bold;
+}
+
+
+/*Focus added*/
+.form-control:focus {
+    border: 1px solid rgba(0, 0, 0, .5) !important;
+}
+
+
+/*Text Color changed at sales form*/
+#cartTable, #cartTable .form-control {
+    color: #000 !important;
+}
+
+.table.dataTable, label, #resultTable {
+    color: #000 !important;
+}
+
+
+/*Previous Due Highlight*/
+.quadrat {
+    -webkit-animation: blinkTheBackground 1s infinite; /* Safari 4+ */
+    -moz-animation: blinkTheBackground 1s infinite; /* Fx 5+ */
+    -o-animation: blinkTheBackground 1s infinite; /* Opera 12+ */
+    animation: blinkTheBackground 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes blinkTheBackground {
+    0%, 49% {
+        background-color: #fff;
+    }
+    50%, 100% {
+        background-color: #e50000;
+    }
+}
+
+
+/**************************************************************************************************************************/
+/*REPORT TABLE START*/
+/**************************************************************************************************************************/
+table.table-fixedheader {
+    width: 100%;
+}
+
+table.table-fixedheader, table.table-fixedheader > thead, table.table-fixedheader > tbody, table.table-fixedheader > tfoot, table.table-fixedheader > thead > tr, table.table-fixedheader > tbody > tr, table.table-fixedheader > tfoot > tr, table.table-fixedheader > thead > tr > th, table.table-fixedheader > tbody > td, table.table-fixedheader > tfoot > tr > th, table.table-fixedheader > tfoot > td {
+    display: block;
+}
+
+table.table-fixedheader > thead > tr:after, table.table-fixedheader > tbody > tr:after, table.table-fixedheader > tfoot > tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+table.table-fixedheader > tbody {
+    overflow-y: scroll;
+    height: 600px !important;
+
+}
+
+table.table-fixedheader > thead {
+    overflow-y: scroll;
+}
+
+table.table-fixedheader > thead::-webkit-scrollbar {
+    background-color: inherit;
+}
+
+table.table-fixedheader > tfoot::-webkit-scrollbar {
+    background-color: inherit;
+}
+
+table.table-fixedheader > thead > tr > th:after, table.table-fixedheader > tbody > tr > td:after, table.table-fixedheader > tfoot > tr > th:after, table.table-fixedheader > tfoot > tr > td:after {
+    content: ' ';
+    display: table-cell;
+    visibility: hidden;
+    clear: both;
+}
+
+table.table-fixedheader > thead tr th, table.table-fixedheader > tbody tr td, table.table-fixedheader > tfoot tr th, table.table-fixedheader > tfoot tr td {
+    float: left;
+    word-wrap: break-word;
+}
+
+/**************************************************************************************************************************/
+/*REPORT TABLE END*/
+/**************************************************************************************************************************/
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice, .select2-container--default .select2-selection--multiple .select2-selection__choice, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: black;
+}
+
+.select2-selection__choice__remove {
+    background: none !important;
+}
+
+.select2-selection__rendered {
+    line-height: 1.5rem !important;
+}
+.select2-selection , .select2-selection--multiple{
+    height: 32px !important;
+}
+.select2-selection--multiple .select2-selection__choice{
+    margin-top: 2px !important;
+}
